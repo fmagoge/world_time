@@ -21,7 +21,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
   ];
 
   void updateTime(index) async{
-    WorldTime instance = locations.[index];
+    WorldTime instance = locations[index];
     await instance.getTime();
     //navigate to home screen
     Navigator.pop(context, {
